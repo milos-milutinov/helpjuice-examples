@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 14pt;
+  font-family: "Kalam", cursive;
+}
+
+#zaglavlje {
+  display: contents;
+}
+
+#zaglavljeGore .omotac {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.2em;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.omotac #mreze ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 0.4em;
+}
+
+.omotac #mreze ul li a {
+  color: #ffffff;
+}
+
+.omotac #logovanje ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.omotac #logovanje ul li:first-child {
+  border-right: 1px solid #ffffff;
+  padding-right: 0.3em;
+}
+
+.omotac #logovanje ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#zaglavljeDole .omotac {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2em;
+}
+
+#zaglavljeDole .omotac #dugmeMeni {
+  display: none;
+}
+
+#zaglavljeDole .omotac #logo h1 a {
+  color: #d17a29;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+#zaglavljeDole .omotac #logo h1 {
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+}
+
+#zaglavljeDole .omotac #logo p {
+  color: grey;
+  text-transform: lowercase;
+}
+
+#zaglavljeDole .omotac #meni #meniUL li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+#zaglavljeDole .omotac #meni #meniUL li a {
+  padding: 0 3em 0 0;
+  text-decoration: none;
+  color: grey;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+#korpa i {
+  color: #d17a29;
+}
+
+#slajder .omotac {
+  background-image: url(../images/slider.jpg);
+  background-position: center;
+  color: #d4b395;
+  height: 100vh;
+}
+
+#slajderTekst {
+  position: relative;
+  top: 3em;
+  left: 10em;
+  width: 40%;
+}
+
+#slajderTekst h2 {
+  font-weight: bold;
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+
+#slajderTekst p {
+  text-align: justify;
+  margin: 0.5em 0;
+}
+
+#slajderTekst a {
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #d4b395;
+  color: #000000;
+  border-radius: 0.5em;
+}
+
+.sekcija .naslov {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3em;
+}
+
+.sekcija .naslov .linija {
+  width: 30em;
+  border-bottom: 0.2em solid #999292;
+}
+
+#kategorije {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#kategorije .kategorija {
+  width: 30em;
+  height: 30em;
+}
+
+#kategorije #zenskiSatovi {
+  background-image: url(../images/women3.jpg);
+  background-repeat: no-repeat;
+}
+
+#kategorije #muskiSatovi {
+  background-image: url(../images/men3.jpg);
+  background-repeat: no-repeat;
+}
+
+.kategorija .kategorijaTekst {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: 28em;
+}
+
+@media only screen and (max-width: 1200px) {
+  #kategorije .kategorija {
+    width: 25em;
+    height: 25em;
+  }
+  .kategorija .kategorijaTekst {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: 21.5em;
+  }
+  #kategorije .kategorijaTekst .dugmeShop {
+    padding: 1em;
+  }
+  #kategorije .kategorijaTekst .dugmeShop a {
+    font-size: 1em;
+  }
+}
+
+.kategorijaTekst .kategorijaOpis {
+  width: 70%;
+  background-color: #444444;
+  color: #d4b395;
+  text-align: center;
+  padding: 1em;
+}
+
+.kategorijaTekst .dugmeShop {
+  background-color: #d4b395;
+  color: #444444;
+  width: 30%;
+  padding: 0.7em;
+}
+
+.kategorijaTekst .dugmeShop a {
+  color: #444444;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+.omotCrni {
+  margin-top: 5em;
+  color: #d4b395;
+  background-color: #000000;
+}
+
+.sekcija #proizvodi {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5em;
+}
+
+.sekcija .naslov h3 {
+  font-size: 2em;
+}
+
+#proizvodi .proizvod {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 0.2em;
+  width: 13em;
+  height: 18em;
+}
+
+#proizvodi .proizvod .cena {
+  position: relative;
+  width: 5em;
+  top: 1em;
+  left: 7em;
+  padding: 0.1em;
+  background-color: #e4c777;
+  border-radius: 0.2em;
+  color: #000000;
+}
+
+#proizvodi .proizvod .opis p,
+#proizvodi .proizvod .opis p a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#brendovi .prvih,
+#brendovi .drugih {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#brendovi .brend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 8em;
+  width: 8em;
+  margin: 1em;
+  border: 0.1em solid #44444454;
+  text-align: center;
+}
+
+#brendovi .brend img {
+  max-height: 5em;
+  max-width: 5em;
+}
+
+.sekcija #kontaktBlok {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+#kontaktBlok #forma form #tbName,
+#tbSubject {
+  background-color: #ffffff;
+  border: none;
+  width: 28.7%;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+#kontaktBlok #forma form #tbBody {
+  width: 58%;
+  background-color: #ffffff;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+#kontaktBlok #forma form #tbSend {
+  width: 58%;
+  text-align: center;
+  border: none;
+  background-color: #e4c777;
+  padding: 0.2em;
+  font-size: 1.5em;
+}
+
+
+#kontakt #tbPretraga {
+  background-color: #ffffff;
+  border: none;
+  width: 60%;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+#kontakt #btnSearch {
+  text-align: center;
+  border: none;
+  background-color: #e4c777;
+  padding: 0.5em;
+  width: 38%;
+  font-size: 1.5em;
+}
+
+#kontakt .prazandiv{
+    content: " ";
+    margin-top: 0.5em;
+    position: relative;
+    width: 99.8%;
+    height: 15.8em;
+    background-color:#e4c777;
+}
